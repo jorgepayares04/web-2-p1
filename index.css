@@ -1,0 +1,36 @@
+/* src/index.css */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.card-favorite {
+  border: 2px solid #ffc107; /* Color de borde iluminado */
+  transition: border-color 0.3s ease; /* Transición suave */
+}
+.card-favorite {
+  border: 2px solid transparent; /* Inicialmente transparente */
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.7); /* Sombra suave */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.card-favorite:hover {
+  border-color: #ffc107; /* Resalta el borde al pasar el cursor */
+}
+
+/* Overview.css */
+.card-image {
+  height: 150px; /* Puedes ajustar este valor al tamaño deseado */
+  object-fit: cover; /* Para que la imagen se ajuste al tamaño manteniendo su proporción */
+}
+
